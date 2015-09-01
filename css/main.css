@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body, html {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace; }
+
+h1 {
+  margin-top: 60px; }
+
+.seasons {
+  text-align: left;
+  margin: 60px 0; }
+  .seasons p {
+    font-size: 24px;
+    text-align: center; }
+
+.season-selector {
+  display: inline-block;
+  width: 24%;
+  font-size: 18px;
+  text-align: left; }
+  .season-selector input[type="checkbox"] {
+    margin: 10px 5px 0 0; }
+  @media screen and (max-width: 768px) {
+    .season-selector {
+      width: 48%; } }
+
+.info-wrapper {
+  margin: 40px 0; }
+
+.info {
+  border: 1px solid #eee;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1); }
+  .info h1 {
+    margin-top: 0; }
+  .info p {
+    font-size: 18px; }
+
+button {
+  font-size: 36px;
+  color: #fff;
+  background-color: #009688;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 60px; }
+  button:hover {
+    background-color: #007d71; }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    margin-top: 40px; }
+
+  .info-wrapper, .seasons {
+    margin: 40px 0; } }
+
+/*# sourceMappingURL=main.css.map */
