@@ -17,16 +17,26 @@ h1 {
     font-size: 24px;
     text-align: center; }
 
-.season-selector {
+.season-selector, .story-selector {
   display: inline-block;
   width: 24%;
   font-size: 18px;
   text-align: left; }
-  .season-selector input[type="checkbox"] {
+  .season-selector input[type="checkbox"], .story-selector input[type="checkbox"] {
     margin: 10px 5px 0 0; }
   @media screen and (max-width: 768px) {
-    .season-selector {
+    .season-selector, .story-selector {
       width: 48%; } }
+
+.story {
+  width: 50%;
+  margin: 40px auto 0 auto; }
+  @media screen and (max-width: 768px) {
+    .story {
+      width: 100%; } }
+
+.story-selector {
+  width: 49%; }
 
 .info-wrapper {
   margin: 40px 0; }

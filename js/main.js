@@ -5,9 +5,7 @@ $(document).ready(function(){
 		var seasonNumbers = $("input:checkbox:checked").map(function(){
   		return $(this).val();
     }).get();
-
-	  //console.log(seasonNumbers);
- 		
+	
  		var randomSeason = seasonNumbers[Math.floor(Math.random()*seasonNumbers.length)];
  		var randomEpisode = 1 + Math.floor(Math.random() * 25);
 
@@ -19,5 +17,6 @@ $(document).ready(function(){
    }
 
    $('button').click(getEpisode);
+
 
 });

@@ -26,7 +26,7 @@ h1{
 	}
 }
 
-.season-selector{
+.season-selector, .story-selector{
 	display: inline-block;
 	width: 24%;
 	font-size: 18px;
@@ -39,6 +39,17 @@ h1{
 	@media screen and (max-width: 768px){
 		width: 48%;
 	}
+}
+
+.story{
+	width: 50%;
+	margin: 40px auto 0 auto;
+	@media screen and (max-width: 768px){
+		width: 100%;
+	}
+}
+.story-selector{
+	width: 49%;
 }
 
 .info-wrapper{
