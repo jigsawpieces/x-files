@@ -33,7 +33,7 @@ $(document).ready(function(){
 
     var randomEpisode = episodes[getRandomInt(0, episodes.length - 1)];
 
-    $.getJSON("http://api.themoviedb.org/3/tv/4087/season/" + randomSeason + "/episode/" + randomEpisode + "?api_key=2c3636cf1675a0d71d704bf0712c6843", function(json) {
+    $.getJSON("https://api.themoviedb.org/3/tv/4087/season/" + randomSeason + "/episode/" + randomEpisode + "?api_key=2c3636cf1675a0d71d704bf0712c6843", function(json) {
       $('.info-wrapper').html('<div class="info"><h1>'+ json['name'] + '</h1> <p>'+ json['overview'] + '</p> <p>Season: ' + json['season_number'] +' Episode: ' + json['episode_number'] +'</p></div>');
     });
 
