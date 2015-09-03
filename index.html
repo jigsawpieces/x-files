@@ -13,24 +13,26 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:700,400,300' rel='stylesheet' type='text/css'>      
+
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
         <![endif]-->
     </head>
     <body>
 
-    <img src="img/background.jpg" width="100%" height="auto">
+    <a class="github" href="https://github.com/jigsawpieces/x-files"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>
+
+    <div class="bg-image">
+      
+      <h1>Random X-Files Episode Finder</h1>
+    
+    </div>
     
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-12">
-
-          <h1>Random X-Files Episode Finder</h1>
-
-            <div class="info-wrapper">
-            </div>
+        <div class="col-md-10 col-md-offset-1">
 
             <div class="seasons">
   
@@ -72,22 +74,32 @@
                 <input type="checkbox" name="season" value="9"> <label>Season 9</label>
               </div>
 
-              <div class="story">
-                <p>Do you want a story arc or 'Monster of the Week' episode?</p>
+            </div>
+            
+            <div class="story">
 
-                <div class="story-selector">
-                  <input type="checkbox" checked name="story" value="arc" checked> <label>Story arc</label>
-                </div>
+              <p>Do you want a story arc or 'Monster of the Week' episode?</p>
 
-                <div class="story-selector">
-                  <input type="checkbox" checked name="story" value="monster" checked> <label>Monster of the Week</label>
-                </div>
-
+              <div class="story-selector">
+                <input type="checkbox" checked name="story" value="arc" checked> <label>Story arc</label>
               </div>
+
+              <div class="story-selector">
+                <input type="checkbox" checked name="story" value="monster" checked> <label>Monster of the Week</label>
+              </div>
+
+             </div>
+
+            <div class="info-wrapper"></div>
+
+            <button>Give me an episode!</button>
+
+            <footer>
+              <p>Built using <a href="www.themoviedb.org">TMDb API</a></p>
+            </footer>
 
             </div>
 
-          <button>Give me an episode</button>
         </div>
 
       </div>
